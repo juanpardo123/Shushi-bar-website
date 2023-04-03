@@ -4,41 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="style.css" rel="stylesheet" type="text/css" >
 
     <title>Sushili SuhiBar</title>
 </head>
 <body>
     <!--Navigation bar section-->
-    <section class="navbar">
-        <!--Navigation bar container-->
-        <nav>
+    <nav>
         
-            <nav-links class="nav-links">
-              <ul class="nav-links">
-                <section class="divider">
-                    <li><a href="index.html">Home</a></li>
-                    <li class="button"><a href="./order.html">View Menu</a></li> 
+        <div class="nav-links">
+            <ul class="nav-links">
+                 <li>
+                    <div class="divider">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li class="button"><a href="./order.html">View Menu</a></li> 
+                        </ul>
+                    </div>
 
-                </section>
-                          <a href="index.html" ><img src="./Images/logoAlt.webp" id="logo" alt="logo"></a>
+                </li>
+            
+            
+                <li>
+                    <a href="index.html" ><img src="./Images/logoAlt.webp" id="logo" alt="logo"></a>
+                </li>
 
-                          <section class="divider">
-                            <li class="button2":>
-                                <span class="material-symbols-rounded">
-                                    shopping_cart
-                                    </span>
-                                <a href="./order.html">Check out</a>
-                            
+                <li>
+                    <div class="divider">
+                        <ul>
+                            <li class="button2">
+                             <span class="material-symbols-rounded">
+        
+                                </span>
+                             <a href="./order.html">Check out</a>
                             </li>
+
+                            
                             <li><a href="./contactUs.html">Contact Us</a></li>
-
-
-                          </section>
-              </ul>
-          </nav-links>
-        </nav>
-    </section>
+                          
+                        </ul>
+  
+                    </div>
+                </li>      
+          </ul>
+        </div>
+    </nav>
 
      <!--HeroImage section-->
 
@@ -49,15 +59,15 @@
      <section class="menuBackdrop" id="reviews">
        
 
-        <verticalRev class="verticalRev">
+        <div class="verticalRev">
            
-                <dealsBackdrop class="dealsBackdrop">
+                <div class="dealsBackdrop">
 
                 <h1>Menu</h1>
-                <mainBanner class="mainBanner">
+                <div class="mainBanner">
                      <img src="./Images/deal2Uf.webp " alt="deal of the day">
-                </mainBanner>
-                 <orderMenuButtons class="orderMenuButtons">
+                </div>
+                 <div class="orderMenuButtons">
                     <ul>
                         <li><a href="#appetizers">Appetizers</a></li>
                         <li><a href="#sushiRolls">Sushi Rolls</a></li>
@@ -65,8 +75,8 @@
                         <li><a href="#specialtyDishes">Specialty Dishes</a></li>
                         <li><a href="#desserts">Desserts</a></li>
                     </ul>
-                </orderMenuButtons>
-                    </dealsBackdrop>
+                </div>
+            </div>
                 <div class="appetizersContainer">
 
             
@@ -89,7 +99,7 @@
                                 <h3>Price: $6</h3>
                             </div>
                             <ul>
-                                <li class="buttonOrder"><a href="./order.html" id="order">Add to Order</a></li> 
+                                <li class="buttonOrder"><a href="./order.html" class="order">Add to Order</a></li> 
                             </ul>
                         </div>
                         </div>
@@ -109,7 +119,7 @@
                                 <h3>Price: $7</h3>
                             </div>
                             <ul>
-                                <li class="buttonOrder"><a href="./order.html" id="order">Add to Order</a></li> 
+                                <li class="buttonOrder"><a href="./order.html" class="order">Add to Order</a></li> 
                             </ul>
                         </div>
                         </div>
@@ -129,7 +139,7 @@
                                 <h3>Price: $8</h3>
                             </div>
                             <ul>
-                                <li class="buttonOrder"><a href="./order.html" id="order">Add to Order</a></li> 
+                                <li class="buttonOrder"><a href="./order.html" class="order">Add to Order</a></li> 
                             </ul>
                         </div>
                         </div>
@@ -137,7 +147,7 @@
                     <li>
                         <div class="BottomTextRev">
                             <div class="verticalRating">
-                                <img src="Images/Harumaki .webp" class="listRev" alt="Harumaki plate">
+                                <img src="Images/Harumaki.webp" class="listRev" alt="Harumaki plate">
                             
                             </div>
                             <div class="verticalorder">
@@ -149,18 +159,18 @@
                                 <h3>Price: $8</h3>
                             </div>
                             <ul>
-                                <li class="buttonOrder"><a href="./order.html" id="order">Add to Order</a></li> 
+                                <li class="buttonOrder"><a href="./order.html" class="order">Add to Order</a></li> 
                             </ul>
                         </div>
                         </div>
                     </li>
                 </ul>
             </div>
-        </verticalRev>
+        </div>
             
         <!--End of appetizers section-->
 
-        <div class="sushiRollsContainer">
+        <article class="sushiRollsContainer">
 
             
 
@@ -182,7 +192,7 @@
                                 <h3>Price: $8</h3>
                             </div>
                             <ul>
-                                <li class="buttonOrder"><a href="./order.html" id="order">Add to Order</a></li> 
+                                <li class="buttonOrder"><a href="./order.html" class="order">Add to Order</a></li> 
                             </ul>
                         </div>
                         </div>
@@ -202,7 +212,7 @@
                                 <h3>Price: $9</h3>
                             </div>
                             <ul>
-                                <li class="buttonOrder"><a href="./order.html" id="order">Add to Order</a></li> 
+                                <li class="buttonOrder"><a href="./order.html" class="order">Add to Order</a></li> 
                             </ul>
                         </div>
                         </div>
@@ -222,7 +232,7 @@
                                 <h3>Price: $8</h3>
                             </div>
                             <ul>
-                                <li class="buttonOrder"><a href="./order.html" id="order">Add to Order</a></li> 
+                                <li class="buttonOrder"><a href="./order.html" class="order">Add to Order</a></li> 
                             </ul>
                         </div>
                         </div>
@@ -242,18 +252,18 @@
                                 <h3>Price: $9</h3>
                             </div>
                             <ul>
-                                <li class="buttonOrder"><a href="./order.html" id="order">Add to Order</a></li> 
+                                <li class="buttonOrder"><a href="./order.html" class="order">Add to Order</a></li> 
                             </ul>
                         </div>
                         </div>
                     </li>
                 </ul>
             </div>
-        </div>
+        </article>
 
         <!--End of Sushi rolls section-->
 
-        <div class="sashimi">
+        <article class="sashimi">
 
             
 
@@ -275,7 +285,7 @@
                                 <h3>Price: $12</h3>
                             </div>
                             <ul>
-                                <li class="buttonOrder"><a href="./order.html" id="order">Add to Order</a></li> 
+                                <li class="buttonOrder"><a href="./order.html" class="order">Add to Order</a></li> 
                             </ul>
                         </div>
                         </div>
@@ -295,7 +305,7 @@
                                 <h3>Price: $10</h3>
                             </div>
                             <ul>
-                                <li class="buttonOrder"><a href="./order.html" id="order">Add to Order</a></li> 
+                                <li class="buttonOrder"><a href="./order.html" class="order">Add to Order</a></li> 
                             </ul>
                         </div>
                         </div>
@@ -315,7 +325,7 @@
                                 <h3>Price: $12</h3>
                             </div>
                             <ul>
-                                <li class="buttonOrder"><a href="./order.html" id="order">Add to Order</a></li> 
+                                <li class="buttonOrder"><a href="./order.html" class="order">Add to Order</a></li> 
                             </ul>
                         </div>
                         </div>
@@ -335,18 +345,18 @@
                                 <h3>Price: $9</h3>
                             </div>
                             <ul>
-                                <li class="buttonOrder"><a href="./order.html" id="order">Add to Order</a></li> 
+                                <li class="buttonOrder"><a href="./order.html" class="order">Add to Order</a></li> 
                             </ul>
                         </div>
                         </div>
                     </li>
                 </ul>
             </div>
-        </div>
+        </article>
 
            <!--End of Sashimi section-->
 
-        <div class="specialtyDishes">
+        <article class="specialtyDishes">
 
             
 
@@ -368,7 +378,7 @@
                                 <h3>Price: $30</h3>
                             </div>
                             <ul>
-                                <li class="buttonOrder"><a href="./order.html" id="order">Add to Order</a></li> 
+                                <li class="buttonOrder"><a href="./order.html" class="order">Add to Order</a></li> 
                             </ul>
                         </div>
                         </div>
@@ -388,7 +398,7 @@
                                 <h3>Price: $25</h3>
                             </div>
                             <ul>
-                                <li class="buttonOrder"><a href="./order.html" id="order">Add to Order</a></li> 
+                                <li class="buttonOrder"><a href="./order.html" class="order">Add to Order</a></li> 
                             </ul>
                         </div>
                         </div>
@@ -408,7 +418,7 @@
                                 <h3>Price: $25</h3>
                             </div>
                             <ul>
-                                <li class="buttonOrder"><a href="./order.html" id="order">Add to Order</a></li> 
+                                <li class="buttonOrder"><a href="./order.html" class="order">Add to Order</a></li> 
                             </ul>
                         </div>
                         </div>
@@ -428,18 +438,18 @@
                                 <h3>Price: $25</h3>
                             </div>
                             <ul>
-                                <li class="buttonOrder"><a href="./order.html" id="order">Add to Order</a></li> 
+                                <li class="buttonOrder"><a href="./order.html" class="order">Add to Order</a></li> 
                             </ul>
                         </div>
                         </div>
                     </li>
                 </ul>
             </div>
-        </div>
+        </article>
 
      <!--End of Specialty dishes section-->
 
-        <div class="desserts">
+        <article class="desserts">
 
             
 
@@ -461,7 +471,7 @@
                                 <h3>Price: $6</h3>
                             </div>
                             <ul>
-                                <li class="buttonOrder"><a href="./order.html" id="order">Add to Order</a></li> 
+                                <li class="buttonOrder"><a href="./order.html" class="order">Add to Order</a></li> 
                             </ul>
                         </div>
                         </div>
@@ -480,7 +490,7 @@
                                 <h3>Price: $6</h3>
                             </div>
                             <ul>
-                                <li class="buttonOrder"><a href="./order.html" id="order">Add to Order</a></li> 
+                                <li class="buttonOrder"><a href="./order.html" class="order">Add to Order</a></li> 
                             </ul>
                         </div>
                         </div>
@@ -500,7 +510,7 @@
                                 <h3>Price: $8</h3>
                             </div>
                             <ul>
-                                <li class="buttonOrder"><a href="./order.html" id="order">Add to Order</a></li> 
+                                <li class="buttonOrder"><a href="./order.html" class="order">Add to Order</a></li> 
                             </ul>
                         </div>
                         </div>
@@ -520,43 +530,44 @@
                                 <h3>Price: $10</h3>
                             </div>
                             <ul>
-                                <li class="buttonOrder"><a href="./order.html" id="order" alt="tempura">Add to Order</a></li> 
+                                <li class="buttonOrder"><a href="./order.html" class="order" >Add to Order</a></li> 
                             </ul>
                         </div>
                         </div>
                     </li>
                 </ul>
             </div>
-        </div>
+        </article>
             </div>
 
-            
 
-        </div>
     </section>
 
     <!--Footer section-->
-    <section class="footer">
-        <footer>
-            <div class="footer-links">
-                <ul class="footer-links">
-                  <section class="socialMedia">
-                    <h1>Follow us on Social Media</h1>
-                        <ul> 
+    <footer class="footer">
+        
+        <div class="footer-links">
+            <ul class="footer-links">
+                <li>
+              <section class="socialMedia">
+                <h1>Follow us on Social Media</h1>
+                    <ul> 
 
-                            <li><a href="https://www.instagram.com/sushili.sushibar/" ><img src="./Images/instagramColor.webp" id="logoBottom" alt="instagram link"></a></li>
-                            <li><a href="https://www.facebook.com/people/Sushili-Sushibar/" ><img src="./Images/facebookColor.webp" id="logoBottom" alt="facebook link"></a></li>
-                            <li><a href="https://twitter.com/SushibarSushili" ><img src="./Images/twitterColor.webp" id="logoBottom" alt="twitter link"></a></li>
-                            <li><a href="https://www.pinterest.com/sushilisuhibar/" ><img src="./Images/pinterest.webp" id="logoBottom" alt="pinterest link"></a></li>
-                        </ul>
-                  </section>
-                             <p>Copyright 1999-2023 by Sushili Co. All Rights Reserved. <br> Powered by CSS.</p>
-                            <a href="index.html" ><img src="./Images/logoAlt.webp" id="logoBottom"></a>
-  
-                </ul>
-            </div>
-        </footer>
-    </section>
+                        <li><a href="https://www.instagram.com/sushili.sushibar/" ><img src="./Images/instagramColor.webp" class="logoBottom" alt="instagram link"></a></li>
+                        <li><a href="https://www.facebook.com/people/Sushili-Sushibar/" ><img src="./Images/facebookColor.webp" class="logoBottom" alt="facebook link"></a></li>
+                        <li><a href="https://twitter.com/SushibarSushili" ><img src="./Images/twitterColor.webp" class="logoBottom" alt="twitter link"></a></li>
+                        <li><a href="https://www.pinterest.com/sushilisuhibar/" ><img src="./Images/pinterest.webp" class="logoBottom" alt="pinterest link"></a></li>
+                    </ul>
+              </section>
+            </li>
+            <li class="liBottomLogo">
+                         <p>Copyright 1999-2023 by Sushili Co. All Rights Reserved. <br> Powered by CSS.</p>
+                        <a href="index.html" ><img src="./Images/logoAlt.webp" class="logoBottom" alt="Sushili logo"></a>
+            </li>
+            </ul>
+        </div>
+    
+    </footer>
 
 </body>
 </html>
