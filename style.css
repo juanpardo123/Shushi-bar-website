@@ -1,0 +1,848 @@
+
+    /* Default main page styling */
+*   {
+        margin: 0;
+        padding: 0;
+        font-family: 'Exo 2', sans-serif;
+        text-decoration-line: blink;
+    }
+
+    @font-face {
+        font-family: 'Material Symbols Outlined';
+        font-style: normal;
+        font-weight: 100 700;
+        src: url(https://fonts.gstatic.com/s/materialsymbolsoutlined/v98/kJEhBvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oFsI.woff2) format('woff2');
+        font-display: swap;
+      }
+
+      
+      
+      .material-symbols-outlined {
+        font-family: 'Material Symbols Outlined';
+        font-weight: normal;
+        font-style: normal;
+        font-size: 24px;
+        line-height: 1;
+        letter-spacing: normal;
+        text-transform: none;
+        display: inline-block;
+        white-space: nowrap;
+        word-wrap: normal;
+        direction: ltr;
+        -webkit-font-feature-settings: 'liga';
+        -webkit-font-smoothing: antialiased;
+      }
+    /*------------------------------------------ Navigation bar styling------------------------------------------------------------------------------------- */
+    nav{
+    display: flex;
+    padding: 5px 3%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(25,20,20,255);
+    }
+    nav img{
+    width: 150;
+    }
+    .nav-links{
+    flex: 1;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+    align-items: center;
+    }
+    .nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+
+    }
+    .nav-links ul li a{
+    color: rgba(240,215,165,255);
+    text-decoration: none;
+    font-size: 20px;
+    font-style: bold;
+    }
+    .nav-links ul li::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: brown;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+    }
+    .nav-links ul li:hover::after{
+    width: 100%;
+
+    }
+
+    #logo{
+    max-height: 120px;
+    }
+
+    /* Order now button styling*/
+.button{
+    background-color: rgb(56, 87, 74);
+    border-radius: 12px;
+    margin-left: 25px;
+    list-style: none;
+    
+}
+
+
+.material-symbols-rounded {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 500,
+  'GRAD' 0,
+  'opsz' 48;
+  color: rgba(240,215,165,255);;
+}
+
+/* menu button styling*/
+.button2{
+    background-color: rgb(157 49 32);
+    border-radius: 12px;
+    margin-right: 25px;
+}
+
+
+/* -----Main page (index) styling--------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* Main body page styling */
+    /* Header (hero image section)*/
+    .header{
+        min-height: 100vh;
+        width: 100%;
+        background-image: url(./Images/backgroundM.webp);
+        background-position: top;
+        background-size: cover;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    /* HeroImage Title*/
+    .header h1{
+        font-size: 86px;
+        color: rgba(240,215,165,255);
+        text-align: center;
+    }
+    
+     /* HeroImage SubTitle*/
+    .header h3{
+        font-size: 34px;
+        color: rgba(240,215,165,255);
+        text-align: center;
+    }
+    
+     /* HeroImage Maintext*/
+    .header p{
+        color: rgba(240,215,165,255);
+        text-align: center;
+        margin: 40px;
+        max-width: 500px;
+        line-height: 33px;
+    }
+    
+     /* HeroImage Buttons*/
+    .header button{
+        background-color: rgba(240,215,165,255);
+        height: auto;
+        padding: 18px;
+        border-radius: 6px;
+        font-size: 16px;
+        margin: 18px;
+        width: 200px;
+        border-color: #332e2e8a;
+    }
+
+/*------------ lower (Menu Picks section)-------------*/
+
+    .lower{
+        height: auto;
+        width: 100%;
+        background-color: rgba(25,20,20,255);
+        background-position: top;
+        background-size: auto;
+        position: relative;
+        display: flex;
+        align-items: end;
+        justify-content: flex-start;
+        flex-direction: column;
+        flex-wrap: wrap;
+        flex-direction: row;
+        
+        padding-bottom: 50px;
+    
+    }
+    
+    /* Menu Picks vertical arragement*/
+    .vertical{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Menu Picks horizontal arragement*/
+    .horizontal{
+
+        display: flex;
+        width: 100%;
+        align-content: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    
+    /* Menu Picks Title*/
+    .vertical h1{
+        color: rgba(240,215,165,255);
+        font-size: 50px;
+        margin: 55px;
+        text-align: center;
+    }
+    
+    /* Menu Picks Subtitle*/
+    .vertical h2{
+        font-family: 'Pacifico', cursive;
+    color: rgba(173,9,42,255);
+    font-size: 41px;
+    margin-bottom: 30px;
+    text-align: center;
+    background-color: wheat;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 21px;
+    }
+
+    /* Menu Picks-- Removes markers from unordered list*/
+    .horizontal li{
+
+        list-style: none;
+        border-color: rgba(240,215,165,255);
+        border-style: dashed;
+        border-radius: 17px;
+        PADDING: 15PX;
+        margin: 30px;
+        
+    }
+    
+     /* Menu Picks button Styling*/
+    .vertical button{
+        color: rgba(240,215,165,255);
+        text-decoration: none;
+        font-size: 20px;
+        font-style: bold;
+    }
+
+    .verticalRev{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .BottomText{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #questions{
+        margin:0;
+        margin-top: 50px;
+    }
+
+    #contact{
+       width: 260px;
+    }
+
+    /* Styling for full menu button*/
+#fullMenu{
+    display: flex;
+    text-decoration: none;
+    color: rgba(240,215,165,255);
+    padding: 21px;
+    font-size: 25px;
+
+}
+
+/*------Reviews arragement----------*/
+
+    .reviews{
+
+        background-image: url('./Images/city.webp');
+        background-position: center;
+        background-size: cover;
+    }
+
+
+    .horizontalRev{
+
+        display: flex;
+        width: 100%;
+        align-content: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        list-style: none;
+        margin-bottom: 20px;
+    }
+
+
+
+    .verticalRev h1{
+        color: rgba(240,215,165,255);
+        font-size: 50px;
+        margin: 55px;
+        text-align: center;
+        background-color: black;
+        padding: 20px;
+        border-radius: 40px;
+    }
+    
+    /* Reviews Subtitle*/
+    .verticalRev h2{
+        font-family: 'Pacifico', cursive;
+        color: rgba(173,9,42,255);
+        font-size: 41px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    
+    .verticalRev button{
+        color: rgba(240,215,165,255);
+        text-decoration: none;
+        font-size: 20px;
+        font-style: bold;
+    }
+
+    .BottomTextRev{
+
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border-radius: 20px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        box-shadow: 0 8px 32px 0 rgb(0 0 0 / 37%);
+        padding: 30px;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        margin: 20px;
+        
+    }
+
+    .profile{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-bottom: 10px;
+    }
+
+    .profilePic{
+        max-height: 66px;
+        border-radius: 40px;
+    }
+
+    .profile h2{
+
+        font-size: 20px;
+        margin: 0;
+        font-family: inherit;
+    }
+
+    .listRev{
+
+        height: 300px;
+        width: 300px;
+        border-color: #332e2e8a;
+        border-style: groove;
+        border-radius: 20px;
+        margin-bottom: 20px;
+        
+    }
+
+    /* rating star icon full*/
+    .material-symbols-outlined {
+  
+    font-variation-settings:
+    'FILL' 100,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48;
+
+    color: bisque;
+     font-size: 50px;
+    margin: 10px;
+ 
+    }
+    /* rating star icon empty*/
+    #partial{
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48;
+   
+    }
+
+/* rating pic and star container*/
+.verticalRating{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+/* rating text container*/
+.revBackdrop{
+   
+    background-color: antiquewhite;
+    margin-left: 20px;
+    padding: 30px;
+    border-radius: 20px;
+    max-width: 310px;
+    min-width: 310px;
+    border-color: #332e2e8a;
+    border-style: ridge;
+
+}
+
+/* rating container*/
+.horizontalRating{
+    margin: 10px;
+}
+
+/* rating container*/
+.list{
+    height: 300px;
+    border-radius: 20px;
+    width: 300px;
+    margin: 10px;
+   
+    
+}
+
+/* Social media links title*/
+
+.socialMedia h1{
+    color: rgba(240,215,165,255);
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+/* Order now button styling*/
+#order{
+    display: flex;
+    text-decoration: none;
+    color: rgba(240,215,165,255);
+    padding: 21px;
+    font-size: 25px;
+    text-align: center;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+}
+
+/* Order now button styling*/
+.buttonOrder{
+    background-color: rgba(172,72,56,255);
+    border-radius: 12px;
+    list-style: none;
+    margin: 25px;
+    border-color: #332e2e8a;
+    border-style: groove;
+}
+
+
+/* full menu button styling*/
+.buttonFullMenu{
+    background-color: rgba(37,53,46,255);
+    border-radius: 12px;
+    list-style: none;
+    margin: 25px;
+}
+
+
+/* --------------------------------------------------footer styling--------------------------------*/
+
+
+/* Styling for bottom Social media links*/
+.footer-links{
+    display: flex;
+    padding: 5px 3%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(25,20,20,255);
+    flex-direction: column;
+    padding: 25px;
+}
+
+/* Styling for bottom logo*/
+#logoBottom{
+    max-height: 50px;
+}
+
+/* Styling for text in footer*/
+.footer-links p{
+    color: rgba(240,215,165,255);
+    text-align: center;
+    margin: 10px;
+    max-width: 500px;
+    border-top: rgba(240,215,165,255);
+    border-top-style: dashed;
+    line-height: 33px;
+}
+
+/* Styling for un ordered list in footer*/
+.socialMedia ul{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+/* Styling for list items*/
+.socialMedia li{
+    margin-left: 5px;
+    margin-right: 5px;
+
+}
+
+/* --------------------------------------------------Order Page Custom Styling---------------------------------------------------------*/
+
+.listRevMain{
+
+    height: 300px;
+    width: 300px;
+    border-radius: 20px;
+    
+}
+
+.mainBanner{
+   
+
+}
+
+.orderMenuButtons ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    margin: 5px;
+    align-items: center;
+}
+
+.orderMenuButtons li{
+    margin: 10px;
+    align-items: center;
+    padding: 20px;
+    border-radius: 30px;
+    background-color: #030303;
+    list-style: none;
+}
+
+.orderMenuButtons a{
+    color: rgba(240,215,165,255);
+}
+
+.mainBanner img{
+    max-width: 53vw;
+    border-radius: 20px;
+    border-color: #332e2e8a;
+    border-style: groove;
+    min-width: 430px;
+}
+
+.revBackdrop h2{
+    color: rgba(173,9,42,255);
+    font-size: 41px;
+    margin-bottom: 5px;
+    text-align: center;
+    font-family: 'Exo 2';
+}
+
+.revBackdrop h3{
+    color: rgba(173,9,42,255);
+    font-size: 25px;
+    margin-bottom: 0px;
+    margin-top: 20px;
+    text-align: left;
+    font-family: 'Exo 2';
+}
+
+.appetizersContainer{
+    background-image: url('./Images/back1.webp');
+    background-size: contain;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.sushiRollsContainer{
+    background-image: url('./Images/back2.webp'); 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    background-position-y: -600px;
+}
+
+.menuBackdrop{
+    background-color: black;
+}
+
+.sashimi{
+    background-image: url('./Images/bach6.webp'); 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.specialtyDishes{
+    background-image: url('./Images/back4.webp'); 
+    background-size: contain;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.desserts{
+    background-image: url('./Images/back5.webp'); 
+    background-size: contain;
+    background-position: initial;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: -165px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.orderMenuButtons{
+    margin: 15px;
+}
+
+.dealsBackdrop{
+    background-image: url('./Images/backmain.webp'); 
+    background-size: contain;
+    background-position: initial;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: -165px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    width: inherit;
+}
+
+
+/* --------------------------------------------------Contact Us Page Custom Styling---------------------------------------------------------*/
+
+.verticalContact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgb(0 0 0 / 37%);
+    padding: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px;
+    align-content: center;
+    width: 50vw;
+    min-width: 400px;
+}
+
+.verticalContact h1{
+    color: rgba(240,215,165,255);
+    font-size: 50px;
+    margin: 10px;
+    text-align: center;
+    background-color: black;
+    padding: 20px;
+    border-radius: 40px;
+}
+
+/* contact Subtitle*/
+.verticalContact h2{
+    font-family: 'Pacifico', cursive;
+    color: rgba(173,9,42,255);
+    font-size: 41px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+
+.menuBackdropContact{
+    background-image: url(./Images/feedback.webp);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    padding: 50px;
+}
+
+.form-style-1 {
+    margin: 10px auto;
+    min-width: 400px;
+    width: 40vw;
+    /* max-width: 400px; */
+    padding: 20px 12px 10px 20px;
+    font: 13px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    
+}
+.form-style-1 li {
+	padding: 0;
+	display: block;
+	list-style: none;
+	margin: 10px 0 0 0;
+}
+.form-style-1 label{
+	margin: 0 0 3px 0;
+    padding: 0px;
+    display: block;
+    font-weight: bold;
+    font-size: 28px;
+    background-color: #f5f5dcbd;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.form-style-1 input[type=text], 
+.form-style-1 input[type=date],
+.form-style-1 input[type=datetime],
+.form-style-1 input[type=number],
+.form-style-1 input[type=search],
+.form-style-1 input[type=time],
+.form-style-1 input[type=url],
+.form-style-1 input[type=email],
+textarea, 
+select{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	border:1px solid #BEBEBE;
+	padding: 7px;
+	margin:0px;
+	-webkit-transition: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+	-ms-transition: all 0.30s ease-in-out;
+	-o-transition: all 0.30s ease-in-out;
+    border-radius: 10px;
+	outline: none;	
+    border-color: black;
+    border-style: groove;
+    height: 60px;
+}
+.form-style-1 input[type=text]:focus, 
+.form-style-1 input[type=date]:focus,
+.form-style-1 input[type=datetime]:focus,
+.form-style-1 input[type=number]:focus,
+.form-style-1 input[type=search]:focus,
+.form-style-1 input[type=time]:focus,
+.form-style-1 input[type=url]:focus,
+.form-style-1 input[type=email]:focus,
+.form-style-1 textarea:focus, 
+.form-style-1 select:focus{
+	-moz-box-shadow: 0 0 8px #88D5E9;
+	-webkit-box-shadow: 0 0 8px #88D5E9;
+	box-shadow: 0 0 8px #88D5E9;
+	border: 1px solid #88D5E9;
+}
+.form-style-1 .field-divided{
+	width: 49%;
+}
+
+.form-style-1 .field-long{
+	width: 100%;
+}
+.form-style-1 .field-select{
+	width: 100%;
+}
+.form-style-1 .field-textarea{
+    height: 100px;
+    border-radius: 10px;
+    border-color: black;
+    border-style: groove;
+}
+.form-style-1 input[type=submit], .form-style-1 input[type=button]{
+	background-color: rgba(172,72,56,255);
+    border-radius: 15px;
+    list-style: none;
+    margin: 9px;
+    border-color: #332e2e8a;
+    border-style: groove;
+    width: -webkit-fill-available;
+    font-size: x-large;
+    color: antiquewhite;
+    padding: 15px;
+    
+}
+.form-style-1 input[type=submit]:hover, .form-style-1 input[type=button]:hover{
+	background: #301112;
+	box-shadow:none;
+	-moz-box-shadow:none;
+	-webkit-box-shadow:none;
+
+}
+.form-style-1 .required{
+	color:red;
+}
+/* --------------------------------------------------Order Page Custom Styling---------------------------------------------------------*/
